@@ -48,7 +48,7 @@ const Header: React.FC = () => {
               className="hover:text-white transition-colors text-white/50"
               aria-label={link.label}
             >
-              <div className={`w-5 h-5 border rounded-full flex items-center justify-center transition-all text-[7px] md:text-[8px] ${isScrolled ? 'border-white/30 hover:border-white' : 'border-white/20 hover:border-white'
+              <div className={`w-8 h-8 md:w-9 md:h-9 backdrop-blur-md bg-white/5 border flex items-center justify-center transition-all duration-300 ease-out text-[10px] md:text-[11px] font-medium rounded-xl shadow-lg hover:shadow-[0_0_15px_rgba(255,255,255,0.3)] hover:scale-110 hover:-translate-y-0.5 hover:bg-white/20 ${isScrolled ? 'border-white/20 hover:border-white' : 'border-white/10 hover:border-white'
                 }`}>
                 {link.label[0]}
               </div>
