@@ -13,3 +13,9 @@ body {
   background-color: #000;
   color: #fff;
 }
+
+@layer utilities {
+  .text-shadow-neon {
+    text-shadow: 0 0 5px #ff003c, 0 0 10px #ff003c;
+  }
+}
