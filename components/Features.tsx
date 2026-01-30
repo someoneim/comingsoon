@@ -324,6 +324,9 @@ const NeonDash: React.FC = () => {
         {/* Overlays */}
         {!gameStarted && !gameOver && (
           <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/60 backdrop-blur-sm z-20">
+            <div className="mb-4 text-xl md:text-2xl text-[#ff00ff] font-bold tracking-[0.3em] uppercase animate-bounce drop-shadow-[0_0_10px_rgba(255,0,255,0.8)] font-mono">
+              HII IBRU
+            </div>
             <h3 className="text-4xl md:text-6xl text-white font-black italic tracking-tighter mb-4 -skew-x-12">
               NEON <span className="text-[#00ffff]">DASH</span>
             </h3>
