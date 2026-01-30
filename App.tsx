@@ -2,7 +2,7 @@
 import React from 'react';
 import Header from './components/Header';
 import Countdown from './components/Countdown';
-import Features from './components/Features';
+
 import NotifyForm from './components/NotifyForm';
 
 const App: React.FC = () => {
@@ -55,7 +55,7 @@ const App: React.FC = () => {
 
       {/* Features Section */}
       <footer id="features" className="relative z-20 border-t border-white/5 bg-black">
-        <Features />
+
       </footer>
     </div>
   );
