@@ -36,5 +36,5 @@ export const SOCIAL_LINKS: SocialLink[] = [
 export const CONTACT_INFO = {
   address: "90 Queen St Melbourne Vic AU",
   phone: "info@automy.in",
-  email: "info@nexus.com"
+  email: "info@automy.in"
 };

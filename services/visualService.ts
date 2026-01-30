@@ -3,7 +3,7 @@ import { GoogleGenAI } from "@google/genai";
 
 /**
  * Generates a high-quality, thematic image for a specific feature using the Gemini 2.5 Flash Image model.
- * The prompt is tailored to ensure the output matches the "Nexus" dark, minimalist, and high-tech aesthetic.
+ * The prompt is tailored to ensure the output matches the "Automy" dark, minimalist, and high-tech aesthetic.
  */
 export const generateFeatureVisual = async (featureTitle: string, featureDetails: string): Promise<string | null> => {
     const apiKey = process.env.API_KEY;
