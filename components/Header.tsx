@@ -32,12 +32,15 @@ const Header: React.FC = () => {
         }`}
     >
       <div className="w-full max-w-7xl flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0">
-        <div className="flex flex-col md:flex-row items-center space-y-1 md:space-y-0 md:space-x-8">
+        <div className="flex flex-col md:flex-row items-center md:space-x-8">
+          {/* Logo */}
+          <div className="w-8 h-8 mb-2 md:mb-0">
+            <img src="/automy.png" alt="Automy" className="w-full h-full object-contain filter drop-shadow-[0_0_5px_rgba(255,255,255,0.5)]" />
+          </div>
+
           <a href={`mailto:${CONTACT_INFO.phone}`} className="hover:text-white transition-colors text-white/50 hidden sm:inline-block lowercase">
             {CONTACT_INFO.phone}
           </a>
-
-
         </div>
 
         <div className="flex items-center space-x-5 md:space-x-6">

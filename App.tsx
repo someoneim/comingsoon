@@ -28,8 +28,8 @@ const App: React.FC = () => {
         {/* Content Overlay */}
         <div className="relative z-10 flex flex-col items-center text-center w-full max-w-5xl">
           {/* Logo */}
-          <div className="w-10 h-10 md:w-12 md:h-12 border border-white/40 rounded-full flex items-center justify-center mb-8 md:mb-10 transition-all duration-700 ease-spring-bouncy hover:scale-110 hover:border-white animate-scale-in cursor-pointer">
-            <span className="text-lg md:text-xl font-light tracking-tighter">a</span>
+          <div className="w-16 h-16 md:w-20 md:h-20 mb-6 md:mb-8 transition-all duration-700 ease-spring-bouncy hover:scale-105 animate-scale-in cursor-pointer">
+            <img src="/automy.png" alt="Automy Logo" className="w-full h-full object-contain drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]" />
           </div>
 
           <h1 className="text-xl sm:text-2xl md:text-5xl font-light tracking-tight md:tracking-tight uppercase mb-4 md:mb-6 text-white/90 px-2 leading-tight animate-fade-in-up [animation-delay:300ms]">
