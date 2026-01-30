@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Countdown from './components/Countdown';
 
 import NotifyForm from './components/NotifyForm';
+import SecretTerminal from './components/SecretTerminal';
 
 const App: React.FC = () => {
   return (
@@ -57,6 +58,7 @@ const App: React.FC = () => {
       <footer id="features" className="relative z-20 border-t border-white/5 bg-black">
 
       </footer>
+      <SecretTerminal />
     </div>
   );
 };
