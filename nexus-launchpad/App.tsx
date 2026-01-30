@@ -1,0 +1,58 @@
+
+import React from 'react';
+import Header from './components/Header';
+import Countdown from './components/Countdown';
+import Features from './components/Features';
+import NotifyForm from './components/NotifyForm';
+
+const App: React.FC = () => {
+  return (
+    <div className="relative min-h-screen flex flex-col bg-black text-white selection:bg-white selection:text-black">
+      <Header />
+      
+      {/* Hero Section */}
+      <main id="home" className="relative flex-grow flex flex-col items-center justify-center pt-32 pb-16 md:pt-24 md:pb-12 overflow-hidden px-4">
+        {/* Atmospheric Background with Shadow Overlay */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="https://images.unsplash.com/photo-1514539079130-25950c84af65?auto=format&fit=crop&q=80&w=2000" 
+            alt="Atmospheric Background" 
+            className="w-full h-full object-cover opacity-30 grayscale brightness-50"
+          />
+          {/* Shaft of light effect simulation */}
+          <div className="absolute inset-0 bg-gradient-to-tr from-black via-transparent to-black opacity-80" />
+          <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-transparent to-black/60" />
+          <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,transparent_0%,black_80%)]" />
+        </div>
+
+        {/* Content Overlay */}
+        <div className="relative z-10 flex flex-col items-center text-center w-full max-w-5xl">
+          {/* Logo */}
+          <div className="w-10 h-10 md:w-12 md:h-12 border border-white/40 rounded-full flex items-center justify-center mb-8 md:mb-10 transition-transform hover:scale-105">
+            <span className="text-lg md:text-xl font-light tracking-tighter">b</span>
+          </div>
+
+          <h1 className="text-xl sm:text-2xl md:text-4xl font-light tracking-[0.2em] md:tracking-[0.25em] uppercase mb-4 md:mb-6 text-white/90 px-2 leading-tight">
+            We Are Almost Ready for Launch
+          </h1>
+          
+          <p className="text-[10px] md:text-xs tracking-[0.2em] md:tracking-[0.3em] uppercase text-white/30 max-w-xl leading-relaxed px-4">
+            Perfect and awesome template to present your future product or service.<br className="hidden sm:block" />
+            Hooking audience attention is all in the opener.
+          </p>
+
+          <Countdown />
+          
+          <NotifyForm />
+        </div>
+      </main>
+
+      {/* Features Section */}
+      <footer id="features" className="relative z-20 border-t border-white/5 bg-black">
+        <Features />
+      </footer>
+    </div>
+  );
+};
+
+export default App;
