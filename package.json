@@ -9,6 +9,9 @@
     "preview": "vite preview",
     "start": "node api/index.js"
   },
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "dependencies": {
     "@google/genai": "^1.38.0",
     "cors": "^2.8.5",
