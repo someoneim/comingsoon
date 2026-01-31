@@ -16,7 +16,14 @@ const connectDB = async () => {
             bufferCommands: false,
         };
 
-        cached.promise = mongoose.connect(process.env.MONGO_URI, opts).then((mongoose) => {
+        const uri = process.env.MONGO_URI ? process.env.MONGO_URI.trim() : "";
+
+        if (!uri) {
+            console.error("MONGO_URI is missing in environment variables");
+            throw new Error("MONGO_URI is missing");
+        }
+
+        cached.promise = mongoose.connect(uri, opts).then((mongoose) => {
             return mongoose;
         });
     }
